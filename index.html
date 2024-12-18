@@ -14,7 +14,7 @@
     <header>
         <nav class = "navbar" role = "navigation" aria-label = "Main Navigation">
             <div class = "navbar__container">
-                <a href="/" id="navbar-logo">Owen</a>
+                <a href="/" id="navbar-logo">Owen Perry</a>
                 <ul class="navbar__menu">
                     <li class="navbar__item">
                         <a href="/" class="navbar__links">Home</a>
@@ -46,7 +46,7 @@
             <div class = "hero__container">
                 <div class="hero__content">
                     <h1>About Me</h1>
-                    <p>Hello! My name is Owen Perry, and I'm an aspiring Game/Web Developer! I'm currently a student at James Madison University attempting a degree in Computer Science. I've been programming since 2018, mostly in Python, Java, and JavaScript, but I can pick up new languages fairly quick. Alongside that, I've been an avid musician for 13 years, serving as a percussionist in both concert and marching settings. Alongside performance, I also love to compose! I'm also an avid fan of football, specifically the JMU Dukes & Minnesota Vikings!</p>
+                    <p>Hello! My name is Owen Perry, I'm 19 years old, and I'm an aspiring Game/Web Developer! I'm currently a student at James Madison University attempting a degree in Computer Science. I've been programming since 2018, mostly in Python, Java, and JavaScript, but I can pick up new languages fairly quick. Alongside that, I've been an avid musician for 13 years, serving as a percussionist in both concert and marching settings. Alongside music performance, I truly love to compose! I'm also an avid fan of football, specifically the JMU Dukes & Minnesota Vikings!</p>
                     <button class="hero__btn">My GitHub</button>
                 </div>
                 <div class="hero__image">
@@ -64,7 +64,7 @@
 
         <!-- Featured Project Section -->
         <section class="featured-project">
-            <div class="container">
+            <div onclick = "redirectToLink()" class="container">
                 <h2>Featured Project</h2>
                 <!-- <p class = "project-description">
                     My current Flagship Project!
@@ -108,5 +108,10 @@
       </div>
      </main>
     <script src="app.js"></script>
+    <script>
+        function redirectToLink() {
+            window.location.href = "https://jmu-cs345.github.io/CS345_FA24_team8/"
+        }
+    </script>
 </body>
 </html>

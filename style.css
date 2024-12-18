@@ -20,7 +20,7 @@
 }
 
 #navbar-logo {
-    color: #0ce48d;
+    color: #9e19bb;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -47,12 +47,12 @@
 }
 
 .navbar__links:hover {
-    color: #0ce48d;
+    color: #d200ff;
     transition: all 0.3s ease;
 }
 
 .button {
-    background: #0ce48d;
+    background: #d200ff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -61,7 +61,7 @@
 }
 
 .button:hover {
-    background: #15b856;
+    background: #7d2390;
     transition: all 0.3s ease;
 }
 
@@ -145,7 +145,7 @@
 
 .hero__btn {
     font-size: 1rem;
-    background: #0ce48d;
+    background: #d200ff;
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -157,7 +157,7 @@
 }
 
 .hero__btn:hover {
-    background: #0ba467;
+    background: #7d2390;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -214,7 +214,7 @@
 
 /* Featured Project */
 .featured-project {
-    background-color: #0abf77;
+    background-color: #3f2045;
     padding: 100px 20px;
     text-align: center;
 }
