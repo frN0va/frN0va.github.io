@@ -259,6 +259,7 @@
     padding: 30px;
     text-align: left;
     max-width: 500px;
+    cursor: pointer;
 }
 
 .feature-item i.icon {
