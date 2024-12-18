@@ -265,6 +265,7 @@
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .feature-item h3 {
