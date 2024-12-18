@@ -302,6 +302,7 @@
 
 .footer__container hr {
     border-top: 1px solid white;
+    min-width: 62%;
 }
 
 #footer__logo {
