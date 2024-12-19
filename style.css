@@ -51,25 +51,11 @@
     transition: all 0.3s ease;
 }
 
-.button {
-    background: #d200ff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    text-decoration: none
-}
-
-.button:hover {
-    background: #7d2390;
-    transition: all 0.3s ease;
-}
-
 .navbar__toggle {
     display: none;
 }
 
-@media screen and(max-width: 968px) {
+@media screen and (max-width: 968px) {
     .navbar__toggle {
         display: block;
         position: absolute;
