@@ -46,7 +46,7 @@
             <div class = "hero__container">
                 <div class="hero__content">
                     <h1>About Me</h1>
-                    <p>Hello! My name is Owen Perry, I'm 19 years old, and I'm an aspiring Game/Web Developer! I'm currently a student at James Madison University attempting a degree in Computer Science. I've been programming since 2018, mostly in Python, Java, and JavaScript, but I can pick up new languages fairly quick. Alongside that, I've been an avid musician for 13 years, serving as a percussionist in both concert and marching settings. Alongside music performance, I truly love to compose! I'm also an avid fan of football, specifically the JMU Dukes & Minnesota Vikings!</p>
+                    <p>Hello! My name is Owen Perry, I'm 19 years old, and I'm an aspiring Game/Web Developer! I'm currently a student at James Madison University pursuing a degree in Computer Science (BS). I've been programming since 2018, mostly in Python, Java, and JavaScript, but I can pick up new languages fairly quick. Alongside that, I've been an avid musician for 13 years, serving as a percussionist in both concert and marching settings. Alongside music performance, I truly love to compose! I'm also an avid fan of football, specifically the James Madison Dukes & Minnesota Vikings!</p>
                     <button class="hero__btn">My GitHub</button>
                 </div>
                 <div class="hero__image">
@@ -64,18 +64,20 @@
 
         <!-- Featured Project Section -->
         <section class="featured-project">
-            <div onclick = "redirectToLink()" class="container">
+            <div class="container">
                 <h2>Featured Project</h2>
-                <!-- <p class = "project-description">
-                    My current Flagship Project!
-                </p> -->
                 <hr />
                 <div class="features-grid">
-                    <div class="feature-item">
+                    <a href="https://www.fossilfortune.com" target = "_blank" class="feature-item">
                         <i class="fa-solid fa-gamepad icon"></i>
                         <h3>Fossil Fortune</h3>
                         <p>Fossil Fortune is a Dinosaur Tycoon Video Game created by myself and a team of developers in the CS 345 Class at JMU. In the game you click to make money, buy workers & floors, and avoid rent costs to complete your company and become a monopoly! Still in active development as of 12/17/24.</p>
-                    </div>
+                    </a>
+                    <a href="https://github.com/frN0va/jmu-football-tracker" target = "_blank" class="feature-item">
+                        <i class="fa-solid fa-football icon"></i>
+                        <h3>Football Commit Tracker</h3>
+                        <p>My Football Commit Tracker is a public HTML/CSS/Javascript website I'm currently working on that will display Commits, Visits, and Offers for JMU Football. *Not Affiliated with JMU Football, just a personal project as a fan.*</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -108,10 +110,5 @@
       </div>
      </main>
     <script src="app.js"></script>
-    <script>
-        function redirectToLink() {
-            window.open("https://www.fossilfortune.com", "_blank")
-        }
-    </script>
 </body>
 </html>

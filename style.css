@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background: #000;
+    background: #0D0D0D;
     z-index: 1000;
     width: 100%;
     margin: 0 auto;
@@ -20,7 +20,7 @@
 }
 
 #navbar-logo {
-    color: #9e19bb;
+    color: #E0AAFF;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -47,7 +47,7 @@
 }
 
 .navbar__links:hover {
-    color: #d200ff;
+    color: #C77DFF;
     transition: all 0.3s ease;
 }
 
@@ -102,7 +102,7 @@
 /* Hero CSS */
 
 .hero {
-    background-color: #141414;
+    background-color: #212121;
 }
 
 .hero__container {
@@ -131,7 +131,7 @@
 
 .hero__btn {
     font-size: 1rem;
-    background: #d200ff;
+    background: #5A189A;
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -143,7 +143,7 @@
 }
 
 .hero__btn:hover {
-    background: #7d2390;
+    background: #C77DFF;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -200,7 +200,7 @@
 
 /* Featured Project */
 .featured-project {
-    background-color: #3f2045;
+    background-color: #7b46a9;
     padding: 100px 20px;
     text-align: center;
 }
@@ -222,8 +222,8 @@
 
 .featured-project hr {
     height: 5px;
-    color: #fff;
-    background: #fff;
+    color: #EAEAEA;
+    background: #EAEAEA;
     font-size: 0px;
     border: 0;
     margin-left: 250px;
