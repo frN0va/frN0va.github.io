@@ -4,8 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software | Owen Perry</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">OP</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/software.html">Software</a>
+                <a href="/portfolio.html">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container hero-content">
+            <h1 class="hero-title">Software Projects</h1>
+            <p class="hero-subtitle">A Collection of My Software Development Projects</p>
+        </div>
+    </header>
+
+    <section class="projects">
+        <div class="container">
+            <div class="project-grid">
+                <div class="project-card">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <h3>Fossil Fortune</h3>
+                    <p>A Dinosaur Tycoon Video Game where players manage their own dinosaur company. Features include worker management, floor expansion, and economic challenges. Built with JavaScript and p5.js.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">p5.js</span>
+                        <span class="tag">Game Dev</span>
+                        <span class="tag">Team Project</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.fossilfortune.com" target="_blank" class="project-link">
+                            <i class="fa-solid fa-link"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/username/fossil-fortune" target="_blank" class="project-link">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <i class="fa-solid fa-football icon"></i>
+                    <h3>Football Tracker</h3>
+                    <p>A web application tracking JMU Football commits, visits, and offers. Features real-time updates and comprehensive statistics. Built with HTML, CSS, and JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Personal Project</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.n0va.tech/jmu-football-tracker" target="_blank" class="project-link">
+                            <i class="fa-solid fa-link"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <i class="fa-solid fa-burger icon"></i>
+                    <h3>RoomPlate</h3>
+                    <p>An app which is currently in development that simplifies meal planning with roommates. It uses a system in which you assign points to the meal you'd like the most for that week & creates a menu based off the selections.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GSAP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fa-solid fa-link"></i> Live Demo
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fa-brands fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/frN0va" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://youtube.com/@N0va1" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/n0vaknowsball" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2024 Owen Perry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animate hero section
+            gsap.from('.hero-title', {
+                duration: 1,
+                y: 100,
+                opacity: 0,
+                ease: 'power4.out'
+            });
+
+            gsap.from('.hero-subtitle', {
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                ease: 'power4.out',
+                delay: 0.2
+            });
+
+            // Animate project cards on scroll
+            gsap.from('.project-card', {
+                duration: 0.8,
+                y: 50,
+                opacity: 0,
+                stagger: 0.2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: '.project-grid',
+                    start: 'top center+=100',
+                    invalidateOnRefresh: true,
+                }
+            });
+        });
+    </script>
 </body>
 </html>
