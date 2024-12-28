@@ -24,6 +24,13 @@ header {
     display: flex;
     align-items: center;
     position: relative;
+    background: #0a0a0a; /* Keep existing background color */
+    background-image: 
+        linear-gradient(to right, #ffffff05 1px, transparent 1px), /* Vertical lines */
+        linear-gradient(to bottom, #ffffff05 1px, transparent 1px); /* Horizontal lines */
+    background-size: 8px 8px; /* Very small boxes with 10px size */
+    background-position: center;
+    background-repeat: repeat; /* Ensures the grid is tiled */
 }
 
 .hero-content {
@@ -53,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 /* Navigation */
@@ -211,16 +218,17 @@ nav {
     color: #7b46a9;
 }
 
-/* About Me Section */
 .about {
     padding: 100px 0;
     background: #1a1a1a;
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    gap: 50px;
 }
 
 .about-text {
@@ -228,6 +236,20 @@ nav {
     font-size: 1.1rem;
     margin-top: 30px;
     line-height: 1.8;
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    color: #4ecdc4;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
 /* Footer */
