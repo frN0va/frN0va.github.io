@@ -2,113 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Owen Perry</title>
-    <link rel="stylesheet" href="style.css" />
-    <script 
-        src="https://kit.fontawesome.com/d93cc8474c.js" 
-        crossorigin="anonymous">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class = "navbar" role = "navigation" aria-label = "Main Navigation">
-            <div class = "navbar__container">
-                <a href="/" id="navbar-logo">Owen Perry</a>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="/" class="navbar__links">Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/software.html" class="navbar__links">Software</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/portfolio.html" class="navbar__links">Portfolio</a>
-                    </li>
-                </ul>
-
-                <button
-                    class = "navbar__toggle"
-                    id = "mobile-menu"
-                    aria-label = "Toggle Navigation"
-                    aria-expanded = ""
-                    false
-                >
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">OP</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/software.html">Software</a>
+                <a href="/portfolio.html">Portfolio</a>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container hero-content">
+            <h1 class="hero-title">Owen Perry</h1>
+            <p class="hero-subtitle">Aspiring Game Developer & Web Designer</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> James Madison University</p>
+            <button>View My Work</button>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-     <main>
-        <section class = "hero">
-            <div class = "hero__container">
-                <div class="hero__content">
-                    <h1>About Me</h1>
-                    <p>Hello! My name is Owen Perry, I'm 19 years old, and I'm an aspiring Game/Web Developer! I'm currently a student at James Madison University pursuing a degree in Computer Science (BS). I've been programming since 2018, mostly in Python, Java, and JavaScript, but I can pick up new languages fairly quick. Alongside that, I've been an avid musician for 13 years, serving as a percussionist in both concert and marching settings. Alongside music performance, I truly love to compose! I'm also an avid fan of football, specifically the James Madison Dukes & Minnesota Vikings!</p>
-                    <button class="hero__btn">My GitHub</button>
-                </div>
-                <div class="hero__image">
-                    <img
-                        id = "hero-img" 
-                        src="/images/TempProfilePic.png" 
-                        alt="Personal Profile Pic">
-                </div>
+    <section id="portfolio" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <hr />
+            <div class="project-grid">
+                <a href="https://www.fossilfortune.com" target="_blank" class="project-card">
+                    <i class="fa-solid fa-gamepad icon"></i>
+                    <h3>Fossil Fortune</h3>
+                    <p>Fossil Fortune is a Dinosaur Tycoon Video Game created by myself and a team of developers in the CS 345 Class at JMU. In the game you click to make money, buy workers & floors, and avoid rent costs to complete your company and become a monopoly! Still in active development as of 12/28/24.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Scrum</span>
+                        <span class="tag">p5.js</span>
+                        <span class="tag">Team Project</span>
+                    </div>
+                </a>
+    
+                <a href="https://www.n0va.tech/jmu-football-tracker" target="_blank" class="project-card">
+                    <i class="fa-solid fa-football icon"></i>
+                    <h3>Football Commit Tracker</h3>
+                    <p>My Football Commit Tracker is a public HTML/CSS/Javascript website I'm currently working on that will display Commits, Visits, and Offers for JMU Football. Not Affiliated with JMU Football, just a personal project as a fan. Still in active development as of 12/28/24.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Personal Project</span>
+                    </div>
+                </a>
+    
+                <a href="#" target="_blank" class="project-card">
+                    <i class="fa-solid fa-code icon"></i>
+                    <h3>Portfolio Website</h3>
+                    <p>A modern, responsive portfolio website built from scratch using the latest web technologies. Features smooth animations, clean design, and optimal performance across all devices.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">GSAP</span>
+                    </div>
+                </a>
             </div>
-        </section>
-
-        <div 
-            style="background-color: lightgrey; height: 100px;">
         </div>
+    </section>
 
-        <!-- Featured Project Section -->
-        <section class="featured-project">
-            <div class="container">
-                <h2>Featured Project</h2>
-                <hr />
-                <div class="features-grid">
-                    <a href="https://www.fossilfortune.com" target = "_blank" class="feature-item">
-                        <i class="fa-solid fa-gamepad icon"></i>
-                        <h3>Fossil Fortune</h3>
-                        <p>Fossil Fortune is a Dinosaur Tycoon Video Game created by myself and a team of developers in the CS 345 Class at JMU. In the game you click to make money, buy workers & floors, and avoid rent costs to complete your company and become a monopoly! Still in active development as of 12/17/24.</p>
-                    </a>
-                    <a href="https://www.n0va.tech/jmu-football-tracker" target = "_blank" class="feature-item">
-                        <i class="fa-solid fa-football icon"></i>
-                        <h3>Football Commit Tracker</h3>
-                        <p>My Football Commit Tracker is a public HTML/CSS/Javascript website I'm currently working on that will display Commits, Visits, and Offers for JMU Football. *Not Affiliated with JMU Football, just a personal project as a fan.*</p>
-                    </a>
-                </div>
-            </div>
-        </section>
+    <section class="about">
+        <div class="container about-content">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm a passionate game developer and web designer with a love for creating immersive digital experiences. 
+                With over 5 years of experience in both game and web development, I specialize in building engaging games 
+                using Unity and creating modern web applications. I'm constantly learning and exploring new technologies 
+                to push the boundaries of what's possible in interactive media.
+            </p>
+        </div>
+    </section>
 
-        <!-- Footer Section -->
-    <div class="footer__container">
-        <hr />
-        <section class="social__media">
-          <div class="social__media--wrap">
-            <div class="footer__logo">
-              <a href="/" id="footer__logo">N0VA</a>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
-            <p class="website__rights">© Owen Perry 2024. All rights reserved.</p>
-            <div class="social__icons">
-              <a href="https://www.github.com/frN0va" target = "_blank" rel = "noopener noreferrer" class="social__icon--link"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="https://www.youtube.com/N0va1" target = "_blank" rel = "noopener noreferrer"  class="social__icon--link"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="/" target = "_blank" rel = "noopener noreferrer"  class="social__icon--link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="https://www.twitter.com/n0vaknowsball" target = "_blank" rel = "noopener noreferrer"  class="social__icon--link"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </div>
-          </div>
-        </section>
-      </div>
-     </main>
-    <script src="app.js"></script>
+            <p class="copyright">© 2024 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.from('.hero-title', {
+                duration: 1,
+                y: 100,
+                opacity: 0,
+                ease: 'power4.out'
+            });
+
+            gsap.from('.hero-subtitle, .location', {
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                ease: 'power4.out',
+                delay: 0.2,
+                stagger: 0.1
+            });
+
+            gsap.from('.tech-item', {
+                duration: 0.8,
+                scale: 0.8,
+                opacity: 0,
+                stagger: 0.1,
+                scrollTrigger: {
+                    trigger: '.tech-grid',
+                    start: 'top center+=100',
+                }
+            });
+
+            gsap.from('.project-card', {
+                duration: 0.8,
+                y: 50,
+                opacity: 0,
+                stagger: 0.2,
+                scrollTrigger: {
+                    trigger: '.project-grid',
+                    start: 'top center+=100',
+                }
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
