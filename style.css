@@ -162,6 +162,8 @@ nav {
     overflow: hidden;
     color: #fff;
     height: 100%; /* Ensures consistent height across all cards */
+    will-change: transform, opacity;
+    transform: translateY(0);
 }
 
 .project-card:hover {

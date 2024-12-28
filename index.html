@@ -88,10 +88,10 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/frN0va" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com/@N0va1" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/n0vaknowsball" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
             <p class="copyright">© 2024 Owen Perry. All rights reserved.</p>
         </div>
@@ -125,18 +125,19 @@
                     start: 'top center+=100',
                 }
             });
-
+            
             gsap.from('.project-card', {
                 duration: 0.8,
                 y: 50,
                 opacity: 0,
                 stagger: 0.2,
+                ease: "power3.out",
                 scrollTrigger: {
                     trigger: '.project-grid',
                     start: 'top center+=100',
+                    invalidateOnRefresh: true,
                 }
             });
-        });
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
