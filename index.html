@@ -12,6 +12,9 @@
     <nav>
         <div class="nav-container">
             <div class="nav-logo">OP</div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="/software.html">Software</a>
@@ -25,7 +28,7 @@
             <h1 class="hero-title">Owen Perry</h1>
             <p class="hero-subtitle">Aspiring Game Developer & Web Designer</p>
             <p class="location"><i class="fas fa-map-marker-alt"></i> James Madison University</p>
-            <a href="https://github.com/frN0va" target="_blank">
+            <a href="https://github.com/frN0va" target="_blank" class="github-link">
                 <button>My GitHub</button>
             </a>
         </div>
@@ -98,6 +101,8 @@
         </div>
     </footer>
 
+    <script src="app.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             gsap.from('.hero-title', {
@@ -106,8 +111,7 @@
                 opacity: 0,
                 ease: 'power4.out'
             });
-
-            
+    
             gsap.from('.hero-subtitle, .location', {
                 duration: 1,
                 y: 50,
@@ -116,15 +120,16 @@
                 delay: 0.2,
                 stagger: 0.1
             });
-
-            gsap.from('button', {
+    
+            // Animate only the GitHub button
+            gsap.from('a[href="https://github.com/frN0va"] button', {
                 duration: 1,
                 y: 50,
                 opacity: 0,
                 ease: 'power4.out',
                 delay: 0.4
             });
-            
+    
             /*
             gsap.from('.project-card', {
                 duration: 0.8,
@@ -139,7 +144,7 @@
                 }
             });
             */
-
+    
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -149,6 +154,6 @@
                 });
             });
         });
-    </script>
+    </script>    
 </body>
 </html>
