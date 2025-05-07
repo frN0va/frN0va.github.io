@@ -15,6 +15,20 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add hover animation styles only */
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Make sure cards are fully visible from the start */
+            opacity: 1 !important; /* Override any GSAP opacity settings */
+            transform: none !important; /* Override any GSAP transform settings */
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px) !important; /* Use !important to override any GSAP animations */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -203,7 +217,7 @@
         gsap.registerPlugin(ScrollTrigger);
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Animate hero section
+            // Animate hero section only
             gsap.from('.hero-title', {
                 duration: 1,
                 y: 100,
@@ -219,7 +233,11 @@
                 delay: 0.2
             });
 
-            // Animate project cards on scroll
+            // Remove any existing animations on project cards
+            gsap.killTweensOf('.project-card');
+            
+            // Make sure there are no scroll animations
+            /*
             gsap.from('.project-card', {
                 duration: 0.8,
                 y: 50,
@@ -232,6 +250,7 @@
                     invalidateOnRefresh: true,
                 }
             });
+            */
         });
     </script>
 </body>
