@@ -26,8 +26,8 @@ header {
     position: relative;
     background: #0a0a0a;
     background-image: 
-        linear-gradient(to right, #ffffff05 1px, transparent 1px),
-        linear-gradient(to bottom, #ffffff05 1px, transparent 1px);
+        linear-gradient(to right, #ffffff06 1px, transparent 1px),
+        linear-gradient(to bottom, #ffffff06 1px, transparent 1px);
     background-size: 10px 10px;
     background-position: center;
     background-repeat: repeat;
