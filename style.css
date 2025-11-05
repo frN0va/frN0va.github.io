@@ -380,10 +380,11 @@ nav {
 }
 
 .about-image {
-    width: 500px;
-    height: auto;
+    width: 200px;
+    height: 520px;
+    object-fit: cover; /* Crops to fill the square */
+    object-position: center; /* Centers the crop */
     border-radius: 15px;
-    object-fit: cover;
 }
 
 .about hr {
