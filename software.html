@@ -7,28 +7,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="n0va.tech" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Add hover animation styles only */
-        .project-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            /* Make sure cards are fully visible from the start */
-            opacity: 1 !important; /* Override any GSAP opacity settings */
-            transform: none !important; /* Override any GSAP transform settings */
-        }
-        
-        .project-card:hover {
-            transform: translateY(-10px) !important; /* Use !important to override any GSAP animations */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-    </style>
 </head>
 <body>
     <nav>
@@ -45,9 +33,9 @@
         </div>
     </nav>
 
-    <header>
+    <header class="software-header">
         <div class="container hero-content">
-            <h1 class="hero-title">Software Projects</h1>
+            <h1 class="hero-title">Software <span>Projects</span></h1>
             <p class="hero-subtitle">A Collection of My Software Development Projects</p>
         </div>
     </header>
@@ -122,7 +110,7 @@
                 <div class="project-card">
                     <i class="fa-solid fa-burger icon"></i>
                     <h3>RoomPlate</h3>
-                    <p>An app which is currently in development that simplifies meal planning with roommates. It uses a system in which you assign points to the meal you'd like the most for that week & creates a menu based off the selections.</p>
+                    <p>An app which is currently in development that simplifies meal planning with roommates. It uses a system in which you assign points to the meal you'd like the most for that week &amp; creates a menu based off the selections.</p>
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
@@ -142,7 +130,7 @@
                 <div class="project-card">
                     <i class="fa-solid fa-bolt icon"></i>
                     <h3>Weather App</h3>
-                    <p>This is a simple Weather App built using Python and Tkinter for the GUI. The app allows users to input a city name and get the current weather information for that city, including temperature, weather condition, and more. The app uses the OpenWeatherMap API to fetch weather data.</p>
+                    <p>A simple Weather App built using Python and Tkinter for the GUI. Input a city name and get current weather info including temperature and conditions. Powered by the OpenWeatherMap API.</p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">Tkinter</span>
@@ -160,7 +148,7 @@
                 <div class="project-card">
                     <i class="fa-solid fa-utensils icon"></i>
                     <h3>MealMate</h3>
-                    <p>MealMate is a recipe search tool that lets you find meals based on ingredients, cuisine, or meal type. It's designed to help you quickly discover new recipes and explore different cooking ideas.</p>
+                    <p>A recipe search tool that lets you find meals based on ingredients, cuisine, or meal type. Designed to help you quickly discover new recipes and explore different cooking ideas.</p>
                     <div class="project-tags">
                         <span class="tag">React</span>
                         <span class="tag">Next.js</span>
@@ -179,7 +167,7 @@
                 <div class="project-card">
                     <i class="fa-solid fa-diamond icon"></i>
                     <h3>Poker Calculator</h3>
-                    <p>Another creation to continue learning React. Poker Calculator where you input your hand & the flop/turn/river to calculate the percentages on your hand.</p>
+                    <p>A React project to practice the framework. Input your hand and the flop/turn/river to calculate win percentages.</p>
                     <div class="project-tags">
                         <span class="tag">React</span>
                         <span class="tag">JavaScript</span>
@@ -202,55 +190,38 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/frN0va" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/owen-perry-416896308/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://youtube.com/@N0va1" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://twitter.com/n0vaknowsball" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/frN0va" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/owen-perry-416896308/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://youtube.com/@N0va1" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://twitter.com/n0vaknowsball" target="_blank" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
             </div>
-            <p class="copyright">© 2025 Owen Perry. All rights reserved.</p>
+            <p class="copyright">© 2026 Owen Perry. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="app.js"></script>
-
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Animate hero section only
-            gsap.from('.hero-title', {
-                duration: 1,
-                y: 100,
-                opacity: 0,
-                ease: 'power4.out'
-            });
+            gsap.fromTo('.hero-title',    { y: 60, opacity: 0 }, { duration: 1,   y: 0, opacity: 1, ease: 'power4.out', delay: 0.1 });
+            gsap.fromTo('.hero-subtitle', { y: 30, opacity: 0 }, { duration: 0.8, y: 0, opacity: 1, ease: 'power3.out', delay: 0.3 });
 
-            gsap.from('.hero-subtitle', {
-                duration: 1,
-                y: 50,
-                opacity: 0,
-                ease: 'power4.out',
-                delay: 0.2
-            });
+            // Card scroll animations
+            const cards = document.querySelectorAll('.project-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        gsap.fromTo(entry.target,
+                            { y: 40, opacity: 0 },
+                            { y: 0, opacity: 1, duration: 0.6, ease: 'power3.out', delay: i * 0.08 }
+                        );
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
 
-            // Remove any existing animations on project cards
-            gsap.killTweensOf('.project-card');
-            
-            // Make sure there are no scroll animations
-            /*
-            gsap.from('.project-card', {
-                duration: 0.8,
-                y: 50,
-                opacity: 0,
-                stagger: 0.2,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: '.project-grid',
-                    start: 'top center+=100',
-                    invalidateOnRefresh: true,
-                }
-            });
-            */
+            cards.forEach(card => { card.style.opacity = 0; observer.observe(card); });
         });
     </script>
 </body>
