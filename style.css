@@ -221,16 +221,6 @@ header.mouse-active .mouse-spotlight {
     z-index: 1;
 }
 
-.hero-eyebrow {
-    font-family: var(--font-body);
-    font-size: 0.78rem;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.25rem;
-}
-
 .hero-title {
     font-family: var(--font-hero);
     font-weight: 400;
