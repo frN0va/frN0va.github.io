@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
@@ -17,10 +20,11 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="nav-container">
-            <div class="nav-logo">OP</div>
+            <div class="nav-logo">owen.</div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span class="hamburger"></span>
             </button>
@@ -50,13 +54,15 @@
                     <a href="https://github.com/frN0va" target="_blank" class="social-icon" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/owen-perry-416896308/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/owen-perry-416896308/" target="_blank" class="social-icon"
+                        aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="https://x.com/n0vaknowsball" target="_blank" class="social-icon" aria-label="Twitter/X">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://instagram.com/owenp.jpg" target="_blank" class="social-icon" aria-label="Instagram">
+                    <a href="https://instagram.com/owenp.jpg" target="_blank" class="social-icon"
+                        aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -73,9 +79,25 @@
 
             <div class="timeline work-timeline">
                 <div class="timeline-item">
+                    <h3>Certified Instructor in Training</h3>
+                    <p>UpLevel Family Martial Arts</p>
+                    <p>January 2015 – February 2020</p>
+                    <p class="timeline-desc">Earned 2nd Degree Black Belt and delivered classes for 50+ students.
+                        Assisted in formal evaluations and belt advancement assessments for 300+ members.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Drumline Instructor</h3>
+                    <p>Fluvanna County High School Marching Band</p>
+                    <p>July 2023 – August 2025</p>
+                    <p class="timeline-desc">Taught music performance, technique, and marching fundamentals. Managed
+                        equipment inventory for the full ensemble.</p>
+                </div>
+                <div class="timeline-item">
                     <h3>Software Engineer</h3>
                     <p>Personal Projects</p>
                     <p>2018 – Present</p>
+                    <p class="timeline-desc">Building games, web apps, and tools — see the Software page for the full
+                        list.</p>
                 </div>
             </div>
 
@@ -154,10 +176,14 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/frN0va" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/owen-perry-416896308/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://youtube.com/@N0va1" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://x.com/n0vaknowsball" target="_blank" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/frN0va" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/owen-perry-416896308/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://youtube.com/@N0va1" target="_blank" aria-label="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://x.com/n0vaknowsball" target="_blank" aria-label="Twitter/X"><i
+                        class="fab fa-twitter"></i></a>
             </div>
             <p class="copyright">© 2026 Owen Perry. All rights reserved.</p>
         </div>
@@ -184,8 +210,8 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            gsap.fromTo('.profile-image', { scale: 0.85, opacity: 0 }, { duration: 1,   scale: 1, opacity: 1, ease: 'power4.out' });
-            gsap.fromTo('.profile-info',  { x: 60,  opacity: 0 },      { duration: 1,   x: 0,     opacity: 1, ease: 'power4.out', delay: 0.2 });
+            gsap.fromTo('.profile-image', { scale: 0.85, opacity: 0 }, { duration: 1, scale: 1, opacity: 1, ease: 'power4.out' });
+            gsap.fromTo('.profile-info', { x: 60, opacity: 0 }, { duration: 1, x: 0, opacity: 1, ease: 'power4.out', delay: 0.2 });
 
             const techItems = document.querySelectorAll('.tech-item');
             const observer = new IntersectionObserver((entries) => {
@@ -204,4 +230,5 @@
         });
     </script>
 </body>
+
 </html>

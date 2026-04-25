@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
@@ -17,10 +20,11 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="nav-container">
-            <div class="nav-logo">OP</div>
+            <div class="nav-logo">owen.</div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span class="hamburger"></span>
             </button>
@@ -35,11 +39,19 @@
     <header id="home">
         <div class="container hero-content">
             <h1 class="hero-title">Owen <span>Perry</span></h1>
-            <p class="hero-subtitle">Aspiring Game Developer &amp; Web Designer</p>
-            <p class="location"><i class="fas fa-map-marker-alt"></i> James Madison University</p>
+
+            <div class="hero-meta">
+                <p class="hero-subtitle">Full Stack Developer &amp; CS Student</p>
+                <span class="hero-meta-divider">·</span>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> James Madison University</p>
+            </div>
+
+            <p class="hero-currently"><span>currently:</span> junior at JMU &middot; building Crate &middot;
+                listening to a lot of jazz</p>
+
             <div class="hero-actions">
                 <a href="https://github.com/frN0va" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-github"></i> My GitHub
+                    <i class="fab fa-github"></i> GitHub
                 </a>
                 <a href="#portfolio" class="btn btn-ghost">
                     View Projects <i class="fas fa-arrow-down"></i>
@@ -53,42 +65,82 @@
             <p class="section-label">Work</p>
             <h2 class="section-title">Featured Projects</h2>
             <div class="project-grid">
-                <a href="https://www.fossilfortune.com" target="_blank" class="project-card">
-                    <i class="fa-solid fa-gamepad icon"></i>
-                    <h3>Fossil Fortune</h3>
-                    <p>A Dinosaur Tycoon Video Game built with a team in CS 345 at JMU. Click to earn money, hire workers, manage floors, and dodge rent costs to build a monopoly. Active as of 12/28/24.</p>
-                    <div class="project-tags">
+
+                <a href="https://www.fossilfortune.com" target="_blank" class="project-card" data-num="01">
+                    <img src="images/fossil-fortune.png" alt="Fossil Fortune" class="card-image"
+                        onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                    <div class="card-placeholder"
+                        style="--placeholder-gradient: linear-gradient(135deg, #1a2a1a 0%, #0f1a0f 100%)"></div>
+                    <div class="card-scrim"></div>
+                    <div class="card-overlay"></div>
+                    <span class="card-num">01</span>
+                    <div class="card-tags-top project-tags">
                         <span class="tag">JavaScript</span>
-                        <span class="tag">Scrum</span>
                         <span class="tag">p5.js</span>
                         <span class="tag">Team Project</span>
                     </div>
-                </a>
-
-                <a href="https://www.n0va.tech/jmu-football-tracker" target="_blank" class="project-card">
-                    <i class="fa-solid fa-football icon"></i>
-                    <h3>Football Tracker</h3>
-                    <p>A fan-made tracker displaying JMU Football commits, visits, and offers. Not affiliated with JMU Football — just a passion project. Active as of 12/28/24.</p>
-                    <div class="project-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Personal Project</span>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <div class="card-footer">
+                                <h3>Fossil Fortune</h3>
+                                <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+                            </div>
+                            <p class="card-desc">A dinosaur tycoon game built with a team of five in CS 345. Click to
+                                earn, hire workers, manage floors, and outlast the rent.</p>
+                        </div>
                     </div>
                 </a>
 
-                <a href="https://github.com/frN0va/Cinescore" target="_blank" class="project-card">
-                    <i class="fa-solid fa-film icon"></i>
-                    <h3>Cinescore</h3>
-                    <p>Log, like, and discover movies — then share your profile with friends. Built in collaboration with Tabulate. Active as of 01/27/25.</p>
-                    <div class="project-tags">
+                <a href="https://marquee.n0va.tech/" target="_blank" class="project-card" data-num="02">
+                    <img src="images/marquee.png" alt="Marquee" class="card-image"
+                        onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                    <div class="card-placeholder"
+                        style="--placeholder-gradient: linear-gradient(135deg, #1a1520 0%, #110e18 100%)"></div>
+                    <div class="card-scrim"></div>
+                    <div class="card-overlay"></div>
+                    <span class="card-num">02</span>
+                    <div class="card-tags-top project-tags">
                         <span class="tag">React</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Rust</span>
-                        <span class="tag">API</span>
-                        <span class="tag">Personal Project</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Vercel</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <div class="card-footer">
+                                <h3>Marquee</h3>
+                                <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+                            </div>
+                            <p class="card-desc">A daily emoji movie guessing game. Figure it out in five guesses or
+                                fewer.</p>
+                        </div>
                     </div>
                 </a>
+
+                <a href="https://github.com/frN0va/Cinescore" target="_blank" class="project-card" data-num="03">
+                    <img src="images/cinescore.png" alt="Cinescore" class="card-image"
+                        onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                    <div class="card-placeholder"
+                        style="--placeholder-gradient: linear-gradient(135deg, #1a1510 0%, #120f08 100%)"></div>
+                    <div class="card-scrim"></div>
+                    <div class="card-overlay"></div>
+                    <span class="card-num">03</span>
+                    <div class="card-tags-top project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Rust</span>
+                        <span class="tag">Personal</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <div class="card-footer">
+                                <h3>Cinescore</h3>
+                                <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+                            </div>
+                            <p class="card-desc">Log, like, and discover movies — then share your profile with friends.
+                                Built in collaboration with Tabulate.</p>
+                        </div>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
@@ -100,8 +152,12 @@
                 <div class="about-text">
                     <p class="section-label">About</p>
                     <h2 class="section-title">Hey, I'm Owen.</h2>
-                    <p>I'm a 20-year-old Full Stack Developer and CS student at James Madison University. I've been programming since 2018 — primarily in Python, Java, and JavaScript — but I pick up new languages fast.</p>
-                    <p>Outside of programming, I'm a 13-year musician specializing in percussion (concert, marching, and jazz) and I also love composing. I'm also a huge football fan, especially the JMU Dukes and the Minnesota Vikings.</p>
+                    <p>I'm a 20-year-old Full Stack Developer and CS student at James Madison University. I've been
+                        programming since 2018 — primarily in Python, Java, and JavaScript — but I pick up new languages
+                        fast.</p>
+                    <p>Outside of programming, I'm a 13-year musician specializing in percussion (concert, marching, and
+                        jazz) and I also love composing. I'm also a huge football fan, especially the JMU Dukes and the
+                        Minnesota Vikings.</p>
                     <div class="about-pills">
                         <span class="pill"><i class="fas fa-code"></i> Python · Java · JavaScript</span>
                         <span class="pill"><i class="fas fa-drum"></i> Percussionist &amp; Composer</span>
@@ -115,10 +171,14 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/frN0va" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/owen-perry-416896308/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://instagram.com/owenp.jpg" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://x.com/n0vaknowsball" target="_blank" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/frN0va" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/owen-perry-416896308/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/owenp.jpg" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://x.com/n0vaknowsball" target="_blank" aria-label="Twitter/X"><i
+                        class="fab fa-twitter"></i></a>
             </div>
             <p class="copyright">© 2026 Owen Perry. All rights reserved.</p>
         </div>
@@ -127,11 +187,11 @@
     <script src="app.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            gsap.fromTo('.hero-eyebrow',  { y: 20, opacity: 0 }, { duration: 0.7, y: 0, opacity: 1, ease: 'power3.out', delay: 0.1 });
-            gsap.fromTo('.hero-title',    { y: 60, opacity: 0 }, { duration: 1,   y: 0, opacity: 1, ease: 'power4.out', delay: 0.25 });
+            gsap.fromTo('.hero-title', { y: 60, opacity: 0 }, { duration: 1, y: 0, opacity: 1, ease: 'power4.out', delay: 0.25 });
             gsap.fromTo('.hero-subtitle', { y: 30, opacity: 0 }, { duration: 0.8, y: 0, opacity: 1, ease: 'power3.out', delay: 0.5 });
-            gsap.fromTo('.location',      { y: 20, opacity: 0 }, { duration: 0.8, y: 0, opacity: 1, ease: 'power3.out', delay: 0.6 });
-            gsap.fromTo('.hero-actions',  { y: 20, opacity: 0 }, { duration: 0.8, y: 0, opacity: 1, ease: 'power3.out', delay: 0.75 });
+            gsap.fromTo('.location', { y: 20, opacity: 0 }, { duration: 0.8, y: 0, opacity: 1, ease: 'power3.out', delay: 0.6 });
+            gsap.fromTo('.hero-currently', { y: 20, opacity: 0 }, { duration: 0.8, y: 0, opacity: 1, ease: 'power3.out', delay: 0.7 });
+            gsap.fromTo('.hero-actions', { y: 20, opacity: 0 }, { duration: 0.8, y: 0, opacity: 1, ease: 'power3.out', delay: 0.85 });
 
             // Mouse spotlight
             const header = document.querySelector('header');
@@ -175,4 +235,5 @@
         });
     </script>
 </body>
+
 </html>
