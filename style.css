@@ -41,6 +41,18 @@ body {
     padding: 0 2rem;
 }
 
+.inline-link {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(240, 192, 96, 0.35);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.inline-link:hover {
+    color: #fad070;
+    border-bottom-color: var(--accent);
+}
+
 /* ============================================================
    NAVIGATION
    ============================================================ */
