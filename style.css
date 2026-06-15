@@ -743,20 +743,36 @@ button:hover {
 .about-carousel {
     position: relative;
     flex-shrink: 0;
+    width: 100%;
+    /* fill its grid column */
+}
+
+/* Fixed-height container so layout never shifts */
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    /* matches your .about-image height */
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .carousel-img {
-    opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    opacity: 0;
     transition: opacity 1.2s ease-in-out;
     pointer-events: none;
 }
 
 .carousel-img.active {
     opacity: 1;
-    position: relative;
     pointer-events: auto;
 }
 
@@ -1316,6 +1332,13 @@ footer {
 
     .about-pills {
         justify-content: center;
+    }
+
+    .carousel-track {
+        height: 320px;
+        /* scale down for mobile */
+        width: 75%;
+        margin: 0 auto;
     }
 
     /* Profile */
