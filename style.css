@@ -740,6 +740,46 @@ button:hover {
     z-index: 1;
 }
 
+.about-carousel {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.carousel-img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1.2s ease-in-out;
+    pointer-events: none;
+}
+
+.carousel-img.active {
+    opacity: 1;
+    position: relative;
+    pointer-events: auto;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: rgba(255, 255, 255, 0.85);
+}
+
 .about-text .section-title {
     margin-bottom: 1.25rem;
 }
